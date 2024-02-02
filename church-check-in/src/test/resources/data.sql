@@ -1,0 +1,24 @@
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('John', 'Doe', '1980-01-01', 'some notes', '1234567890', 'abc@def.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Jane', 'Doe', '1980-01-01', 'some notes', '1234567890', 'def@sjfud.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Alice', 'Smith', '1990-02-02', 'some notes', '2345678901', 'alice@smith.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Bob', 'Johnson', '1991-03-03', 'some notes', '3456789012', 'bob@johnson.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Charlie', 'Williams', '1992-04-04', 'some notes', '4567890123', 'charlie@williams.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('David', 'Brown', '1993-05-05', 'some notes', '5678901234', 'david@brown.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Eve', 'Jones', '1994-06-06', 'some notes', '6789012345', 'eve@jones.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Frank', 'Miller', '1995-07-07', 'some notes', '7890123456', 'frank@miller.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Grace', 'Davis', '1996-08-08', 'some notes', '8901234567', 'grace@davis.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Harry', 'Garcia', '1997-09-09', 'some notes', '9012345678', 'harry@garcia.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Ivy', 'Martinez', '1998-10-10', 'some notes', '0123456789', 'ivy@martinez.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Jack', 'Robinson', '1999-11-11', 'some notes', '1234567890', 'jack@robinson.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Kim', 'Taylor', '2000-12-12', 'some notes', '2345678901', 'kim@taylor.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Liam', 'Anderson', '2001-01-01', 'some notes', '3456789012', 'liam@anderson.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Mia', 'Thomas', '2002-02-02', 'some notes', '4567890123', 'mia@thomas.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Noah', 'Jackson', '2003-03-03', 'some notes', '5678901234', 'noah@jackson.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Olivia', 'White', '2004-04-04', 'some notes', '6789012345', 'olivia@white.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Parker', 'Harris', '2005-05-05', 'some notes', '7890123456', 'parker@harris.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Quinn', 'Martin', '2006-06-06', 'some notes', '8901234567', 'quinn@martin.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Riley', 'Thompson', '2007-07-07', 'some notes', '9012345678', 'riley@thompson.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Sam', 'Gonzalez', '2008-08-08', 'some notes', '0123456789', 'sam@gonzalez.com');
+insert into person (firstname, lastname, birthday, notes, phone, email) values ('Taylor', 'Lopez', '2009-09-09', 'some notes', '1234567890', 'taylor@lopez.com');
+
+insert into relationship (parent_id, child_id) VALUES (1, 2);
