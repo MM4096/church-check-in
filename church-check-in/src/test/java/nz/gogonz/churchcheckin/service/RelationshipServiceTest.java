@@ -1,6 +1,7 @@
 package nz.gogonz.churchcheckin.service;
 
 import nz.gogonz.churchcheckin.dto.RelationshipResult;
+import nz.gogonz.churchcheckin.model.Person;
 import nz.gogonz.churchcheckin.model.Relationship;
 import nz.gogonz.churchcheckin.repo.TestConfiguration;
 import org.junit.jupiter.api.Test;
@@ -32,6 +33,12 @@ class RelationshipServiceTest {
     @Test
     void getAllRelationshipPersons() {
         List<RelationshipResult> result = relationshipService.getAllRelationshipPersons();
+        assertFalse(result.isEmpty());
+    }
+
+    @Test
+    void getParents() {
+        List<Person> result = relationshipService.getParents("Jane_Doe");
         assertFalse(result.isEmpty());
     }
 }

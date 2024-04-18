@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nz.gogonz.churchcheckin.service.CheckInServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-01T23:28:48" hostname="HP-EliteBook-840-G3" time="0.019">
+  <properties/>
+  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.service.CheckInServiceTest" time="0.005"/>
+  <testcase name="findByDateBetween()" classname="nz.gogonz.churchcheckin.service.CheckInServiceTest" time="0.012"/>
+  <system-out><![CDATA[Hibernate: select ci1_0.id,ci1_0.check_in_time,ci1_0.check_out_time,ci1_0.person_id from checkin ci1_0 where ci1_0.check_in_time between ? and ?
+Hibernate: select p1_0.id,p1_0.birthday,p1_0.email,p1_0.firstname,p1_0.lastname,p1_0.notes,p1_0.phone from person p1_0 where p1_0.id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,24 +1,50 @@
 package nz.gogonz.churchcheckin.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "relationship")
 public class Relationship {
-    @EmbeddedId
-    private RelationshipId id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(name = "parent_id")
+    private long parentId;
+
+    @Column(name = "child_id")
+    private long childId;
+
 
     public Relationship() {
     }
 
-    public Relationship(RelationshipId id) {
+    public Relationship(long parentId, long childId) {
+        this.parentId = parentId;
+        this.childId = childId;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
         this.id = id;
     }
 
-    public RelationshipId getId() {
-        return id;
+    public long getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(long parentId) {
+        this.parentId = parentId;
+    }
+
+    public long getChildId() {
+        return childId;
+    }
+
+    public void setChildId(long childId) {
+        this.childId = childId;
     }
 }

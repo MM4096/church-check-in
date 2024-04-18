@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -28,5 +29,21 @@ class PersonRepositoryTest {
     @Test
     public void findByFirstname() {
         List<Person> result = personRepository.findByFirstname("John");
+        assertFalse(result.isEmpty());
+    }
+
+    @Test
+    public void findByFirstnameLike() {
+        List<Person> result = personRepository.findByFirstnameIgnoreCaseLikeOrLastnameIgnoreCaseLike("%g%", "%g%");
+        assertFalse(result.isEmpty());
+    }
+
+    @Test
+    public void findByString() {
+        List<Person> result = personRepository.findAll().stream()
+            .filter(person ->
+                    person.getFirstname().matches("(?i)^" + Pattern.quote("a") + ".*"))//(1)
+            .map(Person::fromPerson).toList();
+        assertFalse(result.isEmpty());
     }
 }

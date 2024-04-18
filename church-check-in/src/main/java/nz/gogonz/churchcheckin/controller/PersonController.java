@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 public class PersonController {
     private final PersonService personService;
 
@@ -20,7 +21,7 @@ public class PersonController {
         this.personService = personService;
     }
 
-    @GetMapping("/persons")
+    @GetMapping("/person/all")
     public ResponseEntity<List<Person>> getAllPersons() {
         try {
             List<Person> persons = personService.findAll();
@@ -31,14 +32,66 @@ public class PersonController {
         }
     }
 
-    @PostMapping("/person")
-    @ResponseBody
-    public ResponseEntity<PersonRequest> createPerson(@RequestBody PersonRequest personRequest) {
+    @RequestMapping(value="person", method = RequestMethod.GET)
+    public ResponseEntity<List<Person>> getPersonsByName(@RequestParam("name") String name) {
         try {
-            System.out.println(personRequest);
-            personService.save(personRequest);
+            if (name.isEmpty()){
+                return new ResponseEntity<>(new ArrayList<>(), HttpStatus.OK);
+            }
 
-            return new ResponseEntity<>(personRequest, HttpStatus.CREATED);
+            List<Person> persons = personService.findByLikeName(name);
+
+            return new ResponseEntity<>(persons, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/person/{name}")
+    public ResponseEntity<List<Person>> getPersonsByFullName(@PathVariable String name) {
+        try {
+            if (name.isEmpty()){
+                return new ResponseEntity<>(new ArrayList<>(), HttpStatus.OK);
+            }
+
+            List<Person> persons = personService.findByFirstnameOrLastnameMatch(name);
+
+            return new ResponseEntity<>(persons, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/person/id/{id}")
+    public ResponseEntity<Person> getPersonById(@PathVariable long id) {
+        try {
+            Person person = personService.findById(id);
+
+            return new ResponseEntity<>(person, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/person/create")
+    @ResponseBody
+    public ResponseEntity<Person> createPerson(@RequestBody PersonRequest personRequest) {
+        try {
+            Person person = personService.save(personRequest);
+
+            return new ResponseEntity<>(person, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping("/person/update/{id}")
+    @ResponseBody
+    public ResponseEntity<Person> updatePerson(@PathVariable long id, @RequestBody PersonRequest personRequest) {
+        try {
+            Person person = personService.updatePerson(id, personRequest);
+
+            return new ResponseEntity<>(person, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }

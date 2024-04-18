@@ -45,6 +45,10 @@ public class Person {
         this.email = email;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getFirstname() {
         return firstname;
     }
@@ -104,6 +108,10 @@ public class Person {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    public static Person fromPerson(Person person){
+        return person == null ? null : new Person(person.getFirstname(), person.getLastname(), person.getBirthday(), person.getNotes(), person.getPhone(), person.getEmail());
     }
 }
 

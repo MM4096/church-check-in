@@ -12,4 +12,16 @@ public interface PersonRepository extends CrudRepository<Person, Long> {
     List<Person> findAll();
 
     Person findById(long id);
+
+    List<Person> findByFirstnameIgnoreCaseLikeOrLastnameIgnoreCaseLike(String firstName, String lastName);
+
+    List<Person> findByFirstnameIgnoreCaseLikeAndLastnameIgnoreCaseLike(String firstName, String lastName);
+
+    List<Person> findByFirstnameIgnoreCaseOrLastnameIgnoreCase(String firstName, String lastName);
+
+    List<Person> findByFirstnameLike(String name);
+
+    List<Person> findByLastnameLike(String name);
+
+    List<Person> findByFirstnameIgnoreCaseAndLastnameIgnoreCase(String firstname, String lastname);
 }
