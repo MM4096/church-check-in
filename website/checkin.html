@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Check In</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-$END$
+    <div class="border center">
+        <h3>People</h3>
+        <div>
+            <input id="search">
+            <button onclick="Search()">Search</button>
+            <button onclick="Clear()">Clear Search</button>
+        </div>
+
+        <div class="border center half" id="personContainer">
+            <p><b>Start searching</b></p>
+        </div>
+        <button onclick="Back()">Back to menu</button>
+    </div>
+
+
+    <script src="scripts/classes.js"></script>
+    <script src="scripts/checkin.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/homeIfNotLoggedIn.js" type="application/javascript"></script>
 </body>
 </html>

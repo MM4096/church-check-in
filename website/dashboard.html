@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-$END$
+    <div class="border center">
+        <h3>Hi!</h3>
+        <button onclick="CheckIn()">Check In</button>
+        <br>
+        <button onclick="UserManager()">User Manager</button>
+        <br>
+        <button onclick="Reports()">Reports</button>
+        <br>
+        <button onclick="LogOut()">Log out</button>
+    </div>
+
+
+    <script src="scripts/homeIfNotLoggedIn.js" type="application/javascript"></script>
+    <script src="scripts/dashboard.js" type="application/javascript"></script>
 </body>
 </html>
