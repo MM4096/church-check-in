@@ -31,18 +31,22 @@ public class Person {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "year")
+    private int year;
+
 
     public Person() {
 
     }
 
-    public Person(String firstname, String lastname, String birthday, String notes, String phone, String email) {
+    public Person(String firstname, String lastname, String birthday, String notes, String phone, String email, int year) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.birthday = birthday;
         this.notes = notes;
         this.phone = phone;
         this.email = email;
+        this.year = year;
     }
 
     public Long getId() {
@@ -97,6 +101,14 @@ public class Person {
         this.email = email;
     }
 
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -107,11 +119,12 @@ public class Person {
                 ", notes='" + notes + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
+                ", year='" + year + '\'' +
                 '}';
     }
 
     public static Person fromPerson(Person person){
-        return person == null ? null : new Person(person.getFirstname(), person.getLastname(), person.getBirthday(), person.getNotes(), person.getPhone(), person.getEmail());
+        return person == null ? null : new Person(person.getFirstname(), person.getLastname(), person.getBirthday(), person.getNotes(), person.getPhone(), person.getEmail(), person.getYear());
     }
 }
 

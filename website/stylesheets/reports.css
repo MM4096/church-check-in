@@ -1,0 +1,41 @@
+.searchBar > input {
+    width: 30% !important;
+    border-radius: 45px;
+}
+.searchBar > button {
+    width: 30%;
+    border-radius: 45px;
+    height: 45px;
+}
+
+.searchResults {
+    width: 95%;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+td, th {
+    /*border: 1px solid #000000;*/
+    padding: 20px;
+    border-radius: 5px;
+}
+
+th {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.centerAlign {
+    text-align: center;
+    /*padding: 0;*/
+}
+
+.noBorder {
+    border: 0;
+}

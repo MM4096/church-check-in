@@ -2,111 +2,201 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Manager</title>
+    <title>Title</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/userManager.css">
+    <link rel="stylesheet" href="stylesheets/searchbar.css">
 </head>
 <body>
-    <div class="border center">
-        <h3>User Manager</h3>
+<div class="header">
 
-        <div class="border center">
-            <div>
-                <input id="search">
-                <button onclick="Search()">Search</button>
-                <button onclick="Clear()">Clear Search</button>
-            </div>
+    <img src="images/logo_placeholder.png" alt="alt_text" onclick="goTo('dashboard.html')">
+    <h1>Church Check In</h1>
 
-            <div class="border center half" id="personContainer">
-                <p><b>Search for a name</b></p>
-            </div>
+</div>
+
+<div class="container full">
+    <div class="searchBar" id="searchBar">
+        <label for="search"></label>
+        <input placeholder="Search by first or last name..." id="search">
+        <button onclick="Search()">Search</button>
+    </div>
+
+    <div class="searchBar" id="resultsBar" hidden>
+        <label for="results"></label>
+        <input placeholder="Results" id="results" disabled>
+        <button onclick="clearSearch()">Clear</button>
+    </div>
+
+    <div class="container results" id="resultsList">
+        <!--region example-->
+<!--        <div class="searchResult" id="searchResult1">-->
+<!--            <img src="images/arrow.png" alt="expand" class="rotate expand" onclick="Expand(1)">-->
+<!--            <p class="name"><b>John Doe</b></p>-->
+<!--            <br>-->
+<!--            <div class="personData noHeight">-->
+<!--                <div class="dataItem" style="display: none">-->
+<!--                    <p class="dataLabel">Name </p>-->
+<!--                    <label>-->
+<!--                        <input class="data nameInput">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none">-->
+<!--                    <p class="dataLabel">Birthday </p>-->
+<!--                    <label>-->
+<!--                        <input class="data dateInput" type="date">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none">-->
+<!--                    <p class="dataLabel">Notes </p>-->
+<!--                    <label>-->
+<!--                        <input class="data notesInput">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none;">-->
+<!--                    <p class="dataLabel">Parent 1 </p>-->
+<!--                        <div class="parentDropdown data">-->
+<!--                            <label>-->
+<!--                                <input class="parent1input" onfocus="showDropdown(1, 0)" onblur="hideDropdown(1, 0)" onkeyup="searchParent(1, 0)">-->
+<!--                            </label>-->
+<!--                            <div class="parentDropdownContent">-->
+<!--                                <button class="parentOption" onclick="setParent(1, 1, 0)">John Doe</button>-->
+<!--                                <p class="parentOption">Jane Doe</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none;">-->
+<!--                    <p class="dataLabel">Phone Number </p>-->
+<!--                    <label>-->
+<!--                        <input class="data parent1contact">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none;">-->
+<!--                    <p class="dataLabel">Parent 2 </p>-->
+<!--                    <label>-->
+<!--                        <input class="data parent2input">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <div class="dataItem" style="display: none;">-->
+<!--                    <p class="dataLabel">Phone Number </p>-->
+<!--                    <label>-->
+<!--                        <input class="data parent2contact">-->
+<!--                    </label>-->
+<!--                </div>-->
+
+<!--                <button onclick="Save(1)" class="saveButton">Save</button>-->
+<!--            </div>-->
+
+<!--        </div>-->
+        <!--endregion-->
+
+        <div class="searchResult" id="createPerson">
+            <img src="images/arrow.png" alt="expand" class="rotate expand" onclick="Expand(-1)">
+            <p class="name"><b>Create a person</b></p>
             <br>
-        </div>
-
-        <br>
-
-        <div class="border">
-            <br>
-            <div class="border center half" id="person">
-                <p><b>Create a person</b></p>
-                <label for="firstname">First Name:</label> <input id="firstname">
-                <br>
-                <label for="lastname">Last Name:</label> <input id="lastname">
-                <br>
-                <label for="birthdate">Birth Date:</label> <input id="birthdate" type="date">
-                <br>
-                <label for="notes">Notes:</label> <textarea id="notes" class="border" rows="3" cols="30"></textarea>
-
-                <br>
-                <div class="floatingWindowWrapper">
-                    <div class="floatingWindow border half" id="floatingWindow" hidden></div>
-                    <label for="parents">Parent:</label> <input id="parents">
+            <div class="personData noHeight">
+                <div class="dataItem" style="display: none">
+                    <p class="dataLabel">Name </p>
+                    <label>
+                        <input class="data nameInput">
+                    </label>
                 </div>
 
-                <div id="parentCreate" class="border" hidden>
-                    <p><b>Parent Information</b></p>
-                    <label for="parentFirstname">First Name:</label> <input id="parentFirstname">
-                    <br>
-                    <label for="parentLastname">Last Name:</label> <input id="parentLastname">
-                    <br>
-                    <label for="parentEmail">Email:</label> <input id="parentEmail">
-                    <br>
-                    <label for="parentPhone">Phone:</label> <input id="parentPhone">
-                    <br>
-                    <button onclick="CreateParent()">Create Parent</button>
-                    <button onclick="CancelParent()">Cancel</button>
+                <div class="dataItem" style="display: none">
+                    <p class="dataLabel">Person is a </p>
+                    <label>
+                        <select class="data personType" onchange="setOptions()" id="personType">
+                            <option value="select" selected>--SELECT--</option>
+                            <option value="child">Child</option>
+                            <option value="parent">Parent</option>
+                        </select>
+                    </label>
                 </div>
 
-                <button onclick="CreateChild()">Create Person</button>
-                <button onclick="ClearCreate()">Clear Creation</button>
-
-<!--                <div class="deletableItem"><p>Parent name</p><p class="removeButton">x</p></div>-->
-            </div>
-            <br>
-
-            <div class="border center half" id="edit" hidden>
-                <h3>Edit Person</h3>
-                <label for="editFirstName">First Name:</label>
-                <input id="editFirstName" placeholder="">
-                <br>
-                <label for="editLastName">Last Name:</label>
-                <input id="editLastName" placeholder="">
-                <br>
-                <div id="editChild">
-                    <label for="editBirthDate">Birth Date:</label>
-                    <input id="editBirthDate" type="date" placeholder="">
-                    <br>
-                    <label for="editNotes">Notes:</label>
-                    <textarea id="editNotes" class="border" rows="3" cols="30" placeholder=""></textarea>
-                    <br>
-
-                    <div class="floatingWindowWrapper">
-                        <div class="floatingWindow border half" id="editFloatingWindow" hidden></div>
-                        <label for="editParents">Parent:</label> <input id="editParents">
+                <div id="parentSection" style="display: none">
+                    <div class="dataItem">
+                        <p class="dataLabel">Phone Number </p>
+                        <label>
+                            <input class="data contact">
+                        </label>
                     </div>
                 </div>
 
-                <div id="editParent">
-                    <label for="editEmail">Email:</label>
-                    <input id="editEmail" placeholder="">
-                    <br>
-                    <label for="editPhone">Phone:</label>
-                    <input id="editPhone" placeholder="">
+                <div id="childSection" style="display: none">
+                    <div class="dataItem">
+                        <p class="dataLabel">Birthday </p>
+                        <label>
+                            <input class="data dateInput" type="date">
+                        </label>
+                    </div>
+
+                    <div class="dataItem">
+                        <p class="dataLabel">Notes </p>
+                        <label>
+                            <input class="data notesInput">
+                        </label>
+                    </div>
+
+                    <div class="dataItem">
+                        <p class="dataLabel">Parent 1 </p>
+                        <div class="parentDropdown data">
+                            <label>
+                                <input class="parent1input" onfocus="showDropdown(-1, 0)" onblur="hideDropdown(-1, 0)" onkeyup="searchParent(-1, 0)">
+                            </label>
+                            <div class="parentDropdownContent">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataItem">
+                        <p class="dataLabel">Phone Number </p>
+                        <label>
+                            <input class="data parent1contact">
+                        </label>
+                    </div>
+
+                    <div class="dataItem">
+                        <p class="dataLabel">Parent 2 </p>
+                        <div class="parentDropdown data">
+                            <label>
+                                <input class="parent2input" onfocus="showDropdown(-1, 1)" onblur="hideDropdown(-1, 1)" onkeyup="searchParent(-1, 1)">
+                            </label>
+                            <div class="parentDropdownContent">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dataItem">
+                        <p class="dataLabel">Phone Number </p>
+                        <label>
+                            <input class="data parent2contact">
+                        </label>
+                    </div>
                 </div>
 
-                <br>
-                <button onclick="Update()">Edit</button>
-                <button onclick="CancelEdit()">Cancel</button>
+
+
+                <button onclick="Save(-1)" class="saveButton">Save</button>
             </div>
+
         </div>
-        <button onclick="Back()">Back</button>
     </div>
+</div>
 
 
-    <script src="scripts/classes.js"></script>
-    <script src="scripts/api.js"></script>
-    <script src="scripts/homeIfNotLoggedIn.js"></script>
-    <script src="scripts/userManager.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="scripts/classes.js"></script>
+<script src="scripts/api.js"></script>
+<script src="scripts/homeIfNotLoggedIn.js"></script>
+<script src="scripts/userManager.js"></script>
+<script src="scripts/navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/userManager.css">
+    <link rel="stylesheet" href="stylesheets/searchbar.css">
+</head>
+<body>
+<div class="header">
+
+    <img src="images/logo_placeholder.png" alt="alt_text" onclick="goTo('home.html')">
+    <h1>Church Check In</h1>
+
+</div>
+
+<div class="container full">
+    <div class="searchBar" id="searchBar">
+        <label for="search"></label>
+        <input placeholder="Search by first or last name..." id="search">
+        <button onclick="Search()">Search</button>
+    </div>
+
+    <div class="searchBar" id="resultsBar" hidden>
+        <label for="results"></label>
+        <input placeholder="Results" id="results" disabled>
+        <button onclick="clearSearch()">Clear</button>
+    </div>
+
+    <div class="container results" id="resultsList">
+        <!--region example-->
+        <div class="searchResult" id="searchResult1">
+            <img src="images/arrow.png" alt="expand" class="rotate expand" onclick="Expand(1)">
+            <p class="name"><b>John Doe</b></p>
+            <br>
+            <div class="personData noHeight">
+                <div class="dataItem" style="display: none">
+                    <p class="dataLabel">Name </p>
+                    <label>
+                        <input class="data nameInput">
+                    </label>
+                </div>
+
+                <div class="dataItem" style="display: none">
+                    <p class="dataLabel">Birthday </p>
+                    <label>
+                        <input class="data dateInput" type="date">
+                    </label>
+                </div>
+
+                <div class="dataItem" style="display: none;">
+                    <p class="dataLabel">Parent 1 </p>
+                        <div class="parentDropdown data">
+                            <label>
+                                <input class="parent1input" onfocus="showDropdown(1, 0)" onblur="hideDropdown(1, 0)">
+                            </label>
+                            <div class="parentDropdownContent">
+                                <button class="parentOption" onclick="setParent(0, 1, 0)">John Doe</button>
+                                <p class="parentOption">Jane Doe</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="dataItem" style="display: none;">
+                    <p class="dataLabel">Phone Number </p>
+                    <label>
+                        <input class="data parent1contact">
+                    </label>
+                </div>
+
+                <div class="dataItem" style="display: none;">
+                    <p class="dataLabel">Parent 2 </p>
+                    <label>
+                        <input class="data parent2input">
+                    </label>
+                </div>
+
+                <div class="dataItem" style="display: none;">
+                    <p class="dataLabel">Phone Number </p>
+                    <label>
+                        <input class="data parent2contact">
+                    </label>
+                </div>
+
+                <button onclick="Save(1)" class="saveButton">Save</button>
+            </div>
+
+        </div>
+        <!--endregion-->
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="scripts/classes.js"></script>
+<script src="scripts/api.js"></script>
+<script src="scripts/homeIfNotLoggedIn.js"></script>
+<script src="scripts/userManager.js"></script>
+<script src="scripts/navigation.js"></script>
+</body>
+</html>

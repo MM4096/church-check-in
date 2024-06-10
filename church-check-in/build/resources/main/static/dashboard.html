@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/home.css">
+</head>
+<body>
+<div class="header">
+
+    <img src="images/logo_placeholder.png" alt="alt_text" onclick="goTo('dashboard.html')">
+    <h1>Church Check In</h1>
+
+</div>
+
+<div class="container full">
+    <div class="blank"></div>
+    <button onclick="goTo('checkin.html')">Check In</button>
+    <br>
+    <button onclick="goTo('userManager.html')">User Manager</button>
+    <br>
+    <button onclick="goTo('reports.html')">Reports</button>
+    <br>
+    <button onclick="LogOut()" class="altButton">Logout</button>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="scripts/navigation.js"></script>
+<script src="scripts/dashboard.js"></script>
+</body>
+</html>

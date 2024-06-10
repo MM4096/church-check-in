@@ -63,7 +63,7 @@ public class PersonService {
     }
 
     public Person save(PersonRequest personRequest) {
-        Person person = new Person(personRequest.getFirstname(), personRequest.getLastname(), personRequest.getBirthday(), personRequest.getNotes(), personRequest.getPhone(), personRequest.getEmail());
+        Person person = new Person(personRequest.getFirstname(), personRequest.getLastname(), personRequest.getBirthday(), personRequest.getNotes(), personRequest.getPhone(), personRequest.getEmail(), personRequest.getYear());
         return personRepository.save(person);
     }
 

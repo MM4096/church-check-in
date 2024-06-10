@@ -8,17 +8,19 @@ public class PersonRequest {
     private String notes;
     private String phone;
     private String email;
+    private int year;
 
     public PersonRequest() {
     }
 
-    public PersonRequest(String firstname, String lastname, String birthday, String notes, String phone, String email) {
+    public PersonRequest(String firstname, String lastname, String birthday, String notes, String phone, String email, int year) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.birthday = birthday;
         this.notes = notes;
         this.phone = phone;
         this.email = email;
+        this.year = year;
     }
 
     public String getFirstname() {
@@ -69,6 +71,14 @@ public class PersonRequest {
         this.email = email;
     }
 
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     @Override
     public String toString() {
         return "PersonRequest{" +
@@ -78,6 +88,7 @@ public class PersonRequest {
                 ", notes='" + notes + '\'' +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
+                ", year=" + year + '\'' +
                 '}';
     }
 }

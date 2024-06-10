@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nz.gogonz.churchcheckin.repo.RelationshipRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-01T23:28:48" hostname="HP-EliteBook-840-G3" time="0.012">
-  <properties/>
-  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.repo.RelationshipRepositoryTest" time="0.012"/>
-  <system-out><![CDATA[Hibernate: select r1_0.child_id,r1_0.parent_id from relationship r1_0
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

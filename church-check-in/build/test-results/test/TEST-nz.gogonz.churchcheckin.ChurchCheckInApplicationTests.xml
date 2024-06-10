@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nz.gogonz.churchcheckin.ChurchCheckInApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-01T23:28:46" hostname="HP-EliteBook-840-G3" time="0.714">
+<testsuite name="nz.gogonz.churchcheckin.ChurchCheckInApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-04T22:28:39" hostname="superadmin-HP-EliteBook-840-G1" time="0.607">
   <properties/>
-  <testcase name="contextLoads()" classname="nz.gogonz.churchcheckin.ChurchCheckInApplicationTests" time="0.714"/>
-  <system-out><![CDATA[12:28:39.236 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [nz.gogonz.churchcheckin.ChurchCheckInApplicationTests]: ChurchCheckInApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:28:39.389 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration nz.gogonz.churchcheckin.ChurchCheckInApplication for test class nz.gogonz.churchcheckin.ChurchCheckInApplicationTests
+  <testcase name="contextLoads()" classname="nz.gogonz.churchcheckin.ChurchCheckInApplicationTests" time="0.607"/>
+  <system-out><![CDATA[10:28:34.742 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [nz.gogonz.churchcheckin.ChurchCheckInApplicationTests]: ChurchCheckInApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:28:34.914 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration nz.gogonz.churchcheckin.ChurchCheckInApplication for test class nz.gogonz.churchcheckin.ChurchCheckInApplicationTests
+10:28:35.113 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,30 +14,29 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2024-03-02T12:28:39.940+13:00  INFO 188843 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : Starting ChurchCheckInApplicationTests using Java 17.0.10 with PID 188843 (started by sudo_go_kill_yourself in /home/sudo_go_kill_yourself/dev/repo/church-check-in-all/church-check-in)
-2024-03-02T12:28:39.943+13:00  INFO 188843 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2024-03-02T12:28:40.676+13:00  INFO 188843 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-03-02T12:28:40.766+13:00  INFO 188843 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
-2024-03-02T12:28:41.575+13:00  INFO 188843 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-03-02T12:28:41.647+13:00  INFO 188843 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-03-02T12:28:41.701+13:00  INFO 188843 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-03-02T12:28:42.008+13:00  INFO 188843 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-03-02T12:28:42.044+13:00  INFO 188843 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-03-02T12:28:42.411+13:00  INFO 188843 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
-2024-03-02T12:28:42.413+13:00  INFO 188843 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@2a19a0fe
-2024-03-02T12:28:42.416+13:00  INFO 188843 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-03-02T12:28:42.834+13:00  WARN 188843 --- [    Test worker] org.hibernate.mapping.RootClass          : HHH000038: Composite-id class does not override equals(): nz.gogonz.churchcheckin.model.RelationshipId
-2024-03-02T12:28:42.835+13:00  WARN 188843 --- [    Test worker] org.hibernate.mapping.RootClass          : HHH000039: Composite-id class does not override hashCode(): nz.gogonz.churchcheckin.model.RelationshipId
-2024-03-02T12:28:44.595+13:00  INFO 188843 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-05T10:28:35.419+12:00  INFO 173569 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : Starting ChurchCheckInApplicationTests using Java 17.0.11 with PID 173569 (started by coding in /home/coding/dev/repo/church-check-in-all/church-check-in)
+2024-06-05T10:28:35.422+12:00  INFO 173569 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-06-05T10:28:36.047+12:00  INFO 173569 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-05T10:28:36.123+12:00  INFO 173569 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-06-05T10:28:36.828+12:00  INFO 173569 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-05T10:28:36.882+12:00  INFO 173569 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-06-05T10:28:36.913+12:00  INFO 173569 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-05T10:28:37.126+12:00  INFO 173569 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-05T10:28:37.152+12:00  INFO 173569 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-05T10:28:37.408+12:00  INFO 173569 --- [    Test worker] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2024-06-05T10:28:37.410+12:00  INFO 173569 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.hsqldb.jdbc.JDBCConnection@5bb7a59
+2024-06-05T10:28:37.412+12:00  INFO 173569 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-05T10:28:38.309+12:00  INFO 173569 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists checkin cascade 
 Hibernate: drop table if exists person cascade 
 Hibernate: drop table if exists relationship cascade 
 Hibernate: create table checkin (check_in_time timestamp(6), check_out_time timestamp(6), id bigint generated by default as identity (start with 1), person_id bigint, primary key (id))
-Hibernate: create table person (id bigint generated by default as identity (start with 1), birthday varchar(255), email varchar(255), firstname varchar(255), lastname varchar(255), notes varchar(255), phone varchar(255), primary key (id))
-Hibernate: create table relationship (child_id bigint not null, parent_id bigint not null, primary key (child_id, parent_id))
-2024-03-02T12:28:44.675+13:00  INFO 188843 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-03-02T12:28:45.866+13:00  WARN 188843 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-03-02T12:28:46.533+13:00  INFO 188843 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : Started ChurchCheckInApplicationTests in 6.922 seconds (process running for 8.785)
+Hibernate: create table person (year integer, id bigint generated by default as identity (start with 1), birthday varchar(255), email varchar(255), firstname varchar(255), lastname varchar(255), notes varchar(255), phone varchar(255), primary key (id))
+Hibernate: create table relationship (child_id bigint, id bigint generated by default as identity (start with 1), parent_id bigint, primary key (id))
+2024-06-05T10:28:38.340+12:00  INFO 173569 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-05T10:28:38.885+12:00  WARN 173569 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-05T10:28:38.912+12:00  INFO 173569 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-06-05T10:28:39.415+12:00  INFO 173569 --- [    Test worker] n.g.c.ChurchCheckInApplicationTests      : Started ChurchCheckInApplicationTests in 4.311 seconds (process running for 5.851)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,0 +1,153 @@
+.container {
+    height: 80vh;
+    justify-content: start;
+    overflow: scroll;
+}
+
+.searchResult {
+    background-color: var(--background-light) !important;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    border-radius: 25px !important;
+}
+
+.searchResult > p {
+    text-align: left;
+    width: 90%;
+    float: left;
+}
+
+.searchResult > img {
+    width: 25px;
+    height: 25px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.expand {
+    transition: 0.2s;
+}
+
+.results {
+    width: 97.5%;
+    height: 75vh;
+}
+
+.personData {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--background-mid);
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: 0.2s;
+
+    /*display: grid !important;*/
+    display: inline-block !important;
+}
+
+.noHeight {
+    height: 0;
+}
+
+.noHeight > * {
+    display: none;
+}
+
+.dataItem {
+    width: 45%;
+    height: 50px;
+    margin: 5px;
+    border-radius: 45px;
+    background-color: var(--background-light);
+    display: block;
+}
+
+.dataItem > * {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.dataLabel {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color-light);
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    color: #ffffff;
+    text-align: right;
+    font-size: 1.5em;
+    float: left;
+    line-height: 200%;
+    overflow: hidden;
+}
+
+.data {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    padding-left: 10px;
+
+    border-radius: 0 45px 45px 0;
+}
+
+.saveButton {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.parentDropdown {
+    /*position: relative;*/
+    /*display: inline-block !important;*/
+    display: inline-block !important;
+    position: relative;
+}
+
+.parentDropdown  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 45px 45px 0;
+}
+
+.parentDropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.parentOption {
+    width: 100%;
+}
+
+.parentDropdown input {
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 45px 45px 0;
+    border: 1px solid #aaaaaa;
+    box-shadow: var(--shadow);
+}
+
+#parentSection {
+    height: fit-content;
+}
+
+#childSection {
+    height: fit-content;
+}

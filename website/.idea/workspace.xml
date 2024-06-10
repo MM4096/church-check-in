@@ -5,94 +5,173 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd9c7f41-c2f6-4b0f-a176-f36332057eef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../church-check-in/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/.idea/modules/church-check-in.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/CheckInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/RelationshipRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/CheckIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/CheckInRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/CheckInService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/controller/CheckInControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/CheckInRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/CheckInServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/PersonServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/checkin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/classes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/homeIfNotLoggedIn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/report.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/userManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/.idea/modules/nz.gogonz.church-check-in.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/checkin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/images/logo_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/checkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/homeIfNotLoggedIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/scripts/userManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/checkin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/searchbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/stylesheets/userManager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/static/userManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../church-ui/.idea/Webstorm Projects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo_placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/checkin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/reports.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/searchbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/userManager.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/dependencies-accessors/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileChanges/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/8.5/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.gradle/vcs-1/gc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.gradle/vcs-1/gc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/modules/church-check-in.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/modules/church-check-in.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/RelationshipController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/controller/RelationshipController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/dto/PersonRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/dto/PersonRequest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/model/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/model/Relationship.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/model/Relationship.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/model/RelationshipId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/repo/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/repo/PersonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/repo/RelationshipRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/repo/RelationshipRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/service/RelationshipService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/main/nz/gogonz/churchcheckin/service/RelationshipService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/test/nz/gogonz/churchcheckin/repo/PersonRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/test/nz/gogonz/churchcheckin/repo/PersonRepositoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/classes/java/test/nz/gogonz/churchcheckin/service/RelationshipServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/classes/java/test/nz/gogonz/churchcheckin/service/RelationshipServiceTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.service.RelationshipServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.service.RelationshipServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/libs/church-check-in-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.ChurchCheckInApplicationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.ChurchCheckInApplicationTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.controller.CheckInControllerTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.repo.CheckInRepositoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.repo.PersonRepositoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.repo.RelationshipRepositoryTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.service.CheckInServiceTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.service.PersonServiceTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/classes/nz.gogonz.churchcheckin.service.RelationshipServiceTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.controller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.repo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/reports/tests/test/packages/nz.gogonz.churchcheckin.service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/resolvedMainClassName" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/resources/test/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/resources/test/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/resources/test/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/resources/test/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.service.RelationshipServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.service.RelationshipServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.ChurchCheckInApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.ChurchCheckInApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.controller.CheckInControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.repo.CheckInRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.repo.PersonRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.repo.RelationshipRepositoryTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.service.CheckInServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.service.PersonServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/TEST-nz.gogonz.churchcheckin.service.RelationshipServiceTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/PersonController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/PersonRepository.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/PersonService.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/Relationship.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/RelationshipRepository.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/RelationshipController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/compileTransaction/stash-dir/RelationshipService.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/PersonRepositoryTest.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/RelationshipRepositoryTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/CheckInControllerTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/CheckInRepositoryTest.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/CheckInServiceTest.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/compileTransaction/stash-dir/RelationshipServiceTest.class.uniqueId1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/ChurchCheckInApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/ChurchCheckInApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/CheckInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/CheckInController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/PersonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/RelationshipController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/controller/RelationshipController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/CheckInResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/PersonRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/PersonRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/RelationshipRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/RelationshipRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/RelationshipResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/dto/RelationshipResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/CheckIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/CheckIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/Relationship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/model/RelationshipId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/CheckInRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/CheckInRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/PersonRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/RelationshipRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/RelationshipRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/TestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/repo/TestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/CheckInService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/CheckInService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/RelationshipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/java/nz/gogonz/churchcheckin/service/RelationshipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/ChurchCheckInApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/ChurchCheckInApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/controller/CheckInControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/controller/CheckInControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/CheckInRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/CheckInRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/PersonRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/PersonRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/RelationshipRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/repo/RelationshipRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/CheckInServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/CheckInServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/PersonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/PersonServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/RelationshipServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/java/nz/gogonz/churchcheckin/service/RelationshipServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../church-check-in/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../church-check-in/src/test/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docker-setup/Script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-setup/Script.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-setup/Script.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkin.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/checkin.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/checkin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/homeIfNotLoggedIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/homeIfNotLoggedIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/userManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/userManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/userManager.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +190,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MM4096&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MM4096/church-check-in.git&quot;,
+    &quot;accountId&quot;: &quot;907ec1be-7b72-4e18-8360-0d4653d6446c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -124,24 +215,38 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Node.js.userManager.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sudo_go_kill_yourself/dev/electron-app-test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/coding/dev/repo/church-check-in-all/website&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/373/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/stylesheets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -173,10 +278,41 @@
       <workItem from="1710792040738" duration="37000" />
       <workItem from="1711852115724" duration="456000" />
       <workItem from="1712106336600" duration="118000" />
+      <workItem from="1713399268363" duration="1698000" />
+      <workItem from="1713401015166" duration="14000" />
+      <workItem from="1713401140201" duration="14000" />
+      <workItem from="1713401232183" duration="12576000" />
+      <workItem from="1714098469679" duration="2797000" />
+      <workItem from="1714106089243" duration="5103000" />
+      <workItem from="1714177047694" duration="5692000" />
+      <workItem from="1714280500261" duration="1475000" />
+      <workItem from="1714433239521" duration="795000" />
+      <workItem from="1714796680154" duration="2265000" />
+      <workItem from="1714799488663" duration="623000" />
+      <workItem from="1714873037271" duration="7555000" />
+      <workItem from="1715290753697" duration="835000" />
+      <workItem from="1715482267581" duration="772000" />
+      <workItem from="1715805901147" duration="190000" />
+      <workItem from="1717540186757" duration="153000" />
+      <workItem from="1718061732683" duration="344000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

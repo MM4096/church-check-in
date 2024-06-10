@@ -1,0 +1,10 @@
+.full {
+    width: 75% !important;
+    margin-left: 12.5% !important;
+    height: 60vh;
+    margin-top: 10vh;
+}
+
+.container > h1 {
+    font-size: 3em;
+}

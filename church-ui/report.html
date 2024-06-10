@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="center border half">
+        <div class="center border half">
+            <label for="dateInput">Choose a date:</label>
+            <input type="date" id="dateInput">
+            <button onclick="GenerateReport()">Generate</button>
+        </div>
+        <table class="center" id="reportTable">
+            <tr><th colspan="3">Enter a date</th></tr>
+        </table>
+        <button onclick="Menu()">Back</button>
+    </div>
+
+
+    <script src="scripts/classes.js"></script>
+    <script src="scripts/report.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/homeIfNotLoggedIn.js" type="application/javascript"></script>
+</body>
+</html>

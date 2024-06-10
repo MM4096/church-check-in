@@ -10,4 +10,9 @@ public class HomeController {
     public String home() {
         return "Hello, World!";
     }
+
+    @RequestMapping("/error")
+    public String error() {
+        return "404 - Resource Not Found";
+    }
 }
