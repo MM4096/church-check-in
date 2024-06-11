@@ -37,7 +37,7 @@ function Search() {
                             }
                             resultsList.append(`<div class="searchResult">
                                             <p class="name"><b>${obj.firstname} ${obj.lastname}</b></p>
-                                            <p class="year">Year 4</p>
+                                            <p class="year">${obj.year != null ? "Year " + obj.year : ""}</p>
                                             <button onclick="${buttonType}" ${buttonClass}>${buttonText}</button>
                                         </div>`);
                             // bar stuff
@@ -103,6 +103,7 @@ function CheckInAll(ids) {
 }
 
 function CheckOut(id) {
+    console.log(id)
     let checkout = new CheckInRequest(id, null, Date.now())
     $.ajax({
         url: getApiBaseUrl() + "checkin/checkout",

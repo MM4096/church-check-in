@@ -75,6 +75,7 @@ public class PersonService {
         person.setNotes(personRequest.getNotes());
         person.setPhone(personRequest.getPhone());
         person.setEmail(personRequest.getEmail());
+        person.setYear(personRequest.getYear());
         return personRepository.save(person);
     }
 }

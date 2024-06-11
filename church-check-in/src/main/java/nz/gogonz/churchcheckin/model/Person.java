@@ -32,14 +32,14 @@ public class Person {
     private String email;
 
     @Column(name = "year")
-    private int year;
+    private Integer year;
 
 
     public Person() {
 
     }
 
-    public Person(String firstname, String lastname, String birthday, String notes, String phone, String email, int year) {
+    public Person(String firstname, String lastname, String birthday, String notes, String phone, String email, Integer year) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.birthday = birthday;
@@ -101,7 +101,7 @@ public class Person {
         this.email = email;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 

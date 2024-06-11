@@ -69,6 +69,14 @@ function Search() {
                                     </div>
                                     
                                     <div class="dataItem" style="display: none">
+                                        <p class="dataLabel">Year Level </p>
+                                        <label>
+                                            <input class="data yearInput" type="number" min="0" max="13" value="${person.year}">
+                                        </label>
+                                    </div>
+
+                                    
+                                    <div class="dataItem" style="display: none">
                                         <p class="dataLabel">Notes </p>
                                         <label>
                                             <input class="data notesInput" value="${person.notes}">
@@ -431,6 +439,8 @@ function Save(index, isParent) {
     }
     else {
         let birthdayInput = objectParent.find(".dateInput");
+        let yearInput = objectParent.find(".yearInput");
+        console.log(yearInput.val())
         let notesInput = objectParent.find(".notesInput");
 
         let parent1Input = objectParent.find(".parent1input");
@@ -448,6 +458,7 @@ function Save(index, isParent) {
         parent2.phone = parent2Contact.val();
 
         person.birthday = birthdayInput.val();
+        person.year = yearInput.val();
         person.notes = notesInput.val();
 
         if (index == -1) {

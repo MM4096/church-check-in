@@ -1,5 +1,5 @@
 .searchBar > input {
-    width: 30% !important;
+    width: 30%;
     border-radius: 45px;
 }
 .searchBar > button {
@@ -10,6 +10,7 @@
 
 .searchResults {
     width: 95%;
+    overflow-x: scroll;
 }
 
 table {
@@ -26,6 +27,20 @@ td, th {
     border-radius: 5px;
 }
 
+#reportTableRange table {
+
+}
+
+#reportTableRange th {
+    padding: 5px;
+    width: max-content;
+}
+
+#reportTableRange td {
+    padding: 10px;
+    width: max-content;
+}
+
 th {
     background-color: var(--main-color);
     color: white;
@@ -38,4 +53,49 @@ th {
 
 .noBorder {
     border: 0;
+}
+
+select {
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    box-shadow: var(--shadow);
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 11px;
+}
+
+.halfInput {
+    width: 15% !important;
+}
+
+.verticalText {
+    writing-mode: sideways-lr;
+    horiz-align: center;
+}
+
+.green {
+    background-color: #1aff00;
+}
+
+.grey {
+    background-color: #aaaaaa;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.red {
+    background-color: #ff001e;
+}
+
+.textOnHover {
+    color: transparent;
+    text-align: center;
+    transition: color 0.1s ease-in;
+}
+
+.textOnHover:hover {
+    color: #000000;
 }

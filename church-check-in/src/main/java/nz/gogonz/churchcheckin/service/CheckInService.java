@@ -38,6 +38,16 @@ public class CheckInService {
         return toResult(checkInRepository.findAllByCheckInTimeBetween(date, nextDay));
     }
 
+    public List<CheckInResult> findByDateRange(int year, int month, int day, int year2, int month2, int day2) {
+        Date start = new Timestamp(new GregorianCalendar(year, month, day).getTimeInMillis());
+        Date end = new Timestamp(new GregorianCalendar(year2, month2, day2).getTimeInMillis());
+        return toResult(checkInRepository.findAllByCheckInTimeBetween(start, end));
+    }
+
+    public List<CheckInResult> findByDateRange(Date start, Date end) {
+        return toResult(checkInRepository.findAllByCheckInTimeBetween(start, end));
+    }
+
     public List<CheckInResult> toResult(List<CheckIn> list) {
         try {
             List<CheckInResult> result = new ArrayList<>();
@@ -69,6 +79,7 @@ public class CheckInService {
             return checkInRepository.save(checkIn);
         } else {
             // Handle the case where no matching CheckIn entry was found
+            System.out.println("No active check-in found for personId: " + personId);
             throw new RuntimeException("No active check-in found for personId: " + personId);
         }
     }

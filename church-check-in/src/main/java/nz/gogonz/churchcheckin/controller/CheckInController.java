@@ -49,6 +49,27 @@ public class CheckInController {
         }
     }
 
+    @GetMapping("/checkin/date/range/{start}/{end}")
+    public ResponseEntity<List<CheckInResult>> getCheckInsByDateRange(@PathVariable String start, @PathVariable String end) {
+        try {
+            String[] startParts = start.split("-");
+            int startYear = Integer.parseInt(startParts[0]);
+            int startMonth = Integer.parseInt(startParts[1]) - 1;
+            int startDay = Integer.parseInt(startParts[2]);
+
+            String[] endParts = end.split("-");
+            int endYear = Integer.parseInt(endParts[0]);
+            int endMonth = Integer.parseInt(endParts[1]) - 1;
+            int endDay = Integer.parseInt(endParts[2]);
+
+            List<CheckInResult> checkIns = checkInService.findByDateRange(startYear, startMonth, startDay, endYear, endMonth, endDay);
+
+            return new ResponseEntity<>(checkIns, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @GetMapping("/checkin/notcheckedout")
     public ResponseEntity<List<CheckInResult>> getNotCheckedOut() {
         try {
