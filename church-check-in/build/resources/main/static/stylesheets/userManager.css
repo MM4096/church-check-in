@@ -130,3 +130,24 @@
 .parentOption {
     width: 100%;
 }
+
+.parentDropdown input {
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 45px 45px 0;
+    border: 1px solid #aaaaaa;
+    box-shadow: var(--shadow);
+}
+
+#parentSection {
+    height: fit-content;
+}
+
+#childSection {
+    height: fit-content;
+}

@@ -1,11 +1,12 @@
 class Person {
-    constructor(firstname, lastname = "", birthday = "", notes = "", email = "", phone = "") {
+    constructor(firstname, lastname = "", birthday = "", notes = "", email = "", phone = "", year = 0) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.birthday = birthday;
         this.notes = notes;
         this.email = email;
         this.phone = phone;
+        this.year = year
     }
 }
 

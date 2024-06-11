@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd9c7f41-c2f6-4b0f-a176-f36332057eef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MM4096&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MM4096/church-check-in.git&quot;,
+    &quot;accountId&quot;: &quot;907ec1be-7b72-4e18-8360-0d4653d6446c&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2cZ8JmTjUGRlYttopVG1Ti4fVyR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Node.js.userManager.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/coding/dev/repo/church-check-in-all/website&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/webstorm/373/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/stylesheets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd9c7f41-c2f6-4b0f-a176-f36332057eef" name="Changes" comment="" />
+      <created>1708307670770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708307670770</updated>
+      <workItem from="1708307672242" duration="350000" />
+      <workItem from="1708308026126" duration="4205000" />
+      <workItem from="1708384092798" duration="11422000" />
+      <workItem from="1708467906785" duration="3659000" />
+      <workItem from="1708562880089" duration="859000" />
+      <workItem from="1708649731643" duration="697000" />
+      <workItem from="1708896911279" duration="6000" />
+      <workItem from="1709168098382" duration="2183000" />
+      <workItem from="1709233382891" duration="3044000" />
+      <workItem from="1709243458034" duration="874000" />
+      <workItem from="1709266483024" duration="3298000" />
+      <workItem from="1709600204951" duration="1639000" />
+      <workItem from="1709665277060" duration="29000" />
+      <workItem from="1709669101173" duration="3134000" />
+      <workItem from="1709676143094" duration="3140000" />
+      <workItem from="1710195663089" duration="4969000" />
+      <workItem from="1710289581880" duration="765000" />
+      <workItem from="1710307298554" duration="437000" />
+      <workItem from="1710370800634" duration="13000" />
+      <workItem from="1710789131653" duration="963000" />
+      <workItem from="1710792040738" duration="37000" />
+      <workItem from="1711852115724" duration="456000" />
+      <workItem from="1712106336600" duration="118000" />
+      <workItem from="1713399268363" duration="1698000" />
+      <workItem from="1713401015166" duration="14000" />
+      <workItem from="1713401140201" duration="14000" />
+      <workItem from="1713401232183" duration="12576000" />
+      <workItem from="1714098469679" duration="2797000" />
+      <workItem from="1714106089243" duration="5103000" />
+      <workItem from="1714177047694" duration="5692000" />
+      <workItem from="1714280500261" duration="1475000" />
+      <workItem from="1714433239521" duration="795000" />
+      <workItem from="1714796680154" duration="2265000" />
+      <workItem from="1714799488663" duration="623000" />
+      <workItem from="1714873037271" duration="7555000" />
+      <workItem from="1715290753697" duration="835000" />
+      <workItem from="1715482267581" duration="772000" />
+      <workItem from="1715805901147" duration="190000" />
+      <workItem from="1717540186757" duration="153000" />
+      <workItem from="1718061732683" duration="14200000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
