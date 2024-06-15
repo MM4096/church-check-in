@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-11T02:51:43" hostname="superadmin-HP-EliteBook-840-G1" time="0.038">
+<testsuite name="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-12T03:18:59" hostname="superadmin-HP-EliteBook-840-G1" time="0.077">
   <properties/>
-  <testcase name="findAllByCheckInTime()" classname="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" time="0.018"/>
-  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" time="0.018"/>
+  <testcase name="findAllByCheckInTime()" classname="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" time="0.028"/>
+  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.repo.CheckInRepositoryTest" time="0.047"/>
   <system-out><![CDATA[Hibernate: select ci1_0.id,ci1_0.check_in_time,ci1_0.check_out_time,ci1_0.person_id from checkin ci1_0 where ci1_0.check_in_time between ? and ?
 Hibernate: select ci1_0.id,ci1_0.check_in_time,ci1_0.check_out_time,ci1_0.person_id from checkin ci1_0
 ]]></system-out>

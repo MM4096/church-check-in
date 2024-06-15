@@ -1,7 +1,12 @@
 function LogOut() {
-    localStorage.setItem("username", "")
-    localStorage.setItem("password", "")
-    window.location.href = "index.html"
+    $.ajax({
+        url: getBaseUrl() + 'user/logout',
+        type: 'GET',
+        success: function (result) {
+            console.log(result)
+            window.location.href = "index.html"
+        },
+    })
 }
 
 function CheckIn() {
@@ -14,4 +19,14 @@ function UserManager() {
 
 function Reports() {
     window.location.href = "report.html"
+}
+
+function checkToken() {
+    $.ajax({
+        url: getBaseUrl() + 'user/check_token',
+        type: 'GET',
+        success: function (result) {
+            console.log(result)
+        },
+    })
 }

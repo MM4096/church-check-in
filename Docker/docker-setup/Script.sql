@@ -25,6 +25,22 @@ create table checkin (
 	check_out_time timestamp
 )
 
+CREATE TABLE admin_table (
+	id serial PRIMARY KEY,
+	username varchar(32) not null,
+	salt varchar(32) not null,
+	password_hash varchar(128) not null
+)
+
+create table tokens (
+	id serial primary key,
+	admin_id int references admin_table (id) not null,
+	issue_date timestamp not null,
+	expiry_date timestamp not null,
+	token varchar(64) not null,
+	is_valid bool not null
+)
+
 set timezone = 'NZDT'
 
 alter database postgres set timezone to 'NZDT'
@@ -36,8 +52,6 @@ insert into person (firstname) values ('Rose')
 insert into relationship  (parent_id, child_id) values (1, 2)
 
 insert into checkin (person_id, check_in_time, check_out_time) values (1, '2022-01-01 00:00:00', '2022-01-01 00:00:01')
-
-delete from persons where personid=1
 
 alter sequence persons_personid_seq restart with 1
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nz.gogonz.churchcheckin.service.RelationshipServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-11T02:51:43" hostname="superadmin-HP-EliteBook-840-G1" time="0.04">
+<testsuite name="nz.gogonz.churchcheckin.service.RelationshipServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-06-12T03:18:59" hostname="superadmin-HP-EliteBook-840-G1" time="0.061">
   <properties/>
-  <testcase name="getRelationshipPersons()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.005"/>
-  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.004"/>
-  <testcase name="getAllRelationshipPersons()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.011"/>
-  <testcase name="getParents()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.014"/>
+  <testcase name="getRelationshipPersons()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.009"/>
+  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.008"/>
+  <testcase name="getAllRelationshipPersons()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.017"/>
+  <testcase name="getParents()" classname="nz.gogonz.churchcheckin.service.RelationshipServiceTest" time="0.022"/>
   <system-out><![CDATA[Hibernate: select r1_0.id,r1_0.child_id,r1_0.parent_id from relationship r1_0
 Hibernate: select p1_0.id,p1_0.birthday,p1_0.email,p1_0.firstname,p1_0.lastname,p1_0.notes,p1_0.phone,p1_0.year from person p1_0 where p1_0.id=?
 Hibernate: select p1_0.id,p1_0.birthday,p1_0.email,p1_0.firstname,p1_0.lastname,p1_0.notes,p1_0.phone,p1_0.year from person p1_0 where p1_0.id=?

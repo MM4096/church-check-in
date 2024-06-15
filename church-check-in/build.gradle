@@ -27,6 +27,7 @@ dependencies {
 	testImplementation 'junit:junit:4.13.2'
 	testImplementation 'org.hsqldb:hsqldb:2.7.1'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'at.favre.lib:bcrypt:0.10.2'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 }
