@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nz.gogonz.churchcheckin.service.PersonServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-12T03:18:59" hostname="superadmin-HP-EliteBook-840-G1" time="0.027">
-  <properties/>
-  <testcase name="findByNameSearch()" classname="nz.gogonz.churchcheckin.service.PersonServiceTest" time="0.015"/>
-  <testcase name="findAll()" classname="nz.gogonz.churchcheckin.service.PersonServiceTest" time="0.009"/>
-  <system-out><![CDATA[Hibernate: select p1_0.id,p1_0.birthday,p1_0.email,p1_0.firstname,p1_0.lastname,p1_0.notes,p1_0.phone,p1_0.year from person p1_0 where upper(p1_0.firstname) like upper(?) escape '\' and upper(p1_0.lastname) like upper(?) escape '\'
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
