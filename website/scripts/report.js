@@ -39,9 +39,16 @@ function GenerateReport() {
                     let checkInTime = new Date(item.checkInTime)
                     let checkOutTime = new Date(item.checkOutTime)
                     let twoDigitCheckInTimeMinutes = checkInTime.getMinutes() < 10 ? `0${checkInTime.getMinutes()}` : checkInTime.getMinutes()
-                    let twoDigitCheckOutTimeMinutes = checkOutTime.getMinutes() < 10 ? `0${checkOutTime.getMinutes()}` : checkOutTime.getMinutes()
+                    let twoDigitCheckOutTimeMinutes;
+                    let checkOutTimeString
+                    if (item.checkOutTime == null) {
+                        checkOutTimeString = `Not checked out`
+                    }
+                    else {
+                        twoDigitCheckOutTimeMinutes = checkOutTime.getMinutes() < 10 ? `0${checkOutTime.getMinutes()}` : checkOutTime.getMinutes()
+                        checkOutTimeString = `${checkOutTime.getHours()}:${twoDigitCheckOutTimeMinutes}`
+                    }
                     let checkInTimeString = `${checkInTime.getHours()}:${twoDigitCheckInTimeMinutes}`
-                    let checkOutTimeString = `${checkOutTime.getHours()}:${twoDigitCheckOutTimeMinutes}`
                     reportTableSingle.append(`<tr><td>${item.person.firstname} ${item.person.lastname}</td><td>${checkInTimeString}</td><td>${checkOutTimeString}</td></tr>`)
                 })
                 reportTableSingle.append(`<tr><th colspan="3" class="centerAlign">Total: ${result.length}</th></tr>`)
